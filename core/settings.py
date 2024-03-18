@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     
     'drf_yasg2',
     'rest_framework',
+    'rest_registration',
     'rest_framework.authtoken',
     'rolepermissions',
     'corsheaders',
@@ -149,3 +150,14 @@ EMAIL_PORT = os.environ.get("SMTP_EMAIL_PORT")
 EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
 EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
 EMAIL_USE_SSL = True
+
+REST_REGISTRATION = {
+    'REGISTER_VERIFICATION_ENABLED': False,
+    'RESET_PASSWORD_VERIFICATION_ENABLED': False,
+    'REGISTER_EMAIL_VERIFICATION_ENABLED': False,
+}
+# ACCOUNT_UNIQUE_EMAIL = True
+# ACCOUNT_USERNAME_REQUIRED = True
+# ACCOUNT_EMAIL_REQUIRED = True
+# # ACCOUNT_SIGNUP_FORM_CLASS = 'base.forms.SignupForm'
+# ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
